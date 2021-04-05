@@ -1,3 +1,4 @@
+{% load  static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,18 +8,17 @@
 
     <title>Dobble Social Network</title>
     <!-- Bootstrap core CSS -->
-    <link href="../bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{% static 'bootstrap/css/bootstrap.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'bootstrap/css/style.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'bootstrap/css/font-awesome.css' %}">
 
-    <!-- Custom styles for this template -->
-    <link href="../bootstrap/css/style.css" rel="stylesheet">
-    <link href="../bootstrap/css/font-awesome.css" rel="stylesheet">
 </head>
 
 <body>
 
 <header>
     <div class="container">
-        <img src="../img/logo.png" class="logo">
+        <img src="{% static 'img/logo.png' %}" class="logo">
 
     </div>
 </header>
@@ -41,6 +41,7 @@
                 <li><a href="groups.html">Groups</a></li>
                 <li><a href="photos.html">Photos</a></li>
                 <li><a href="profile.html">Profile</a></li>
+                <li><a href="profile.html">Logout</a></li>
             </ul>
         </div><!--/.nav-collapse -->
     </div>
@@ -81,7 +82,7 @@
                     <div class="panel-body">
                         <div class="row">
                             <div class="col-sm-2">
-                                <a href="profile.html" class="post-avatar thumbnail"><img src="../img/user.png" alt="">
+                                <a href="profile.html" class="post-avatar thumbnail"><img src="../../media/img/user.png" alt="">
                                     <div class="text-center">DivUser1</div>
                                 </a>
                                 <div class="likes text-center">7 Likes</div>
@@ -109,7 +110,7 @@
                                 <div class="clearfix"></div>
                                 <div class="comments">
                                     <div class="comment">
-                                        <a href="" class="comment-avatar pull-left"><img src="../img/user.png"
+                                        <a href="" class="comment-avatar pull-left"><img src="../../media/img/user.png"
                                                                                          alt=""></a>
                                         <div class="comment-text">
                                             <p>Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -118,7 +119,7 @@
                                     </div>
                                     <div class="clearfix"></div>
                                     <div class="comment">
-                                        <a href="" class="comment-avatar pull-left"><img src="../img/user.png"
+                                        <a href="" class="comment-avatar pull-left"><img src="../../media/img/user.png"
                                                                                          alt=""></a>
                                         <div class="comment-text">
                                             <p>Lorem Ipsum is simply dummy text.</p>
@@ -135,7 +136,7 @@
                     <div class="panel-body">
                         <div class="row">
                             <div class="col-sm-2">
-                                <a href="profile.html" class="post-avatar thumbnail"><img src="../img/user.png" alt="">
+                                <a href="profile.html" class="post-avatar thumbnail"><img src="../../media/img/user.png" alt="">
                                     <div class="text-center">DivUser2</div>
                                 </a>
                                 <div class="likes text-center">7 Likes</div>
@@ -162,7 +163,7 @@
                                 <div class="clearfix"></div>
                                 <div class="comments">
                                     <div class="comment">
-                                        <a href="" class="comment-avatar pull-left"><img src="../img/user.png"
+                                        <a href="" class="comment-avatar pull-left"><img src="../../media/img/user.png"
                                                                                          alt=""></a>
                                         <div class="comment-text">
                                             <p>Lorem Ipsum is simply .</p>
@@ -179,7 +180,7 @@
                     <div class="panel-body">
                         <div class="row">
                             <div class="col-sm-2">
-                                <a href="profile.html" class="post-avatar thumbnail"><img src="../img/user.png" alt="">
+                                <a href="profile.html" class="post-avatar thumbnail"><img src="../../media/img/user.png" alt="">
                                     <div class="text-center">DivUser3</div>
                                 </a>
                                 <div class="likes text-center">15 Likes</div>
@@ -206,7 +207,7 @@
                                 <div class="clearfix"></div>
                                 <div class="comments">
                                     <div class="comment">
-                                        <a href="" class="comment-avatar pull-left"><img src="../img/user.png"
+                                        <a href="" class="comment-avatar pull-left"><img src="../../media/img/user.png"
                                                                                          alt=""></a>
                                         <div class="comment-text">
                                             <p>Lorem Ipsum is simply dummy t.</p>
@@ -214,7 +215,7 @@
                                     </div>
                                     <div class="clearfix"></div>
                                     <div class="comment">
-                                        <a href="" class="comment-avatar pull-left"><img src="../img/user.png"
+                                        <a href="" class="comment-avatar pull-left"><img src="../../media/img/user.png"
                                                                                          alt=""></a>
                                         <div class="comment-text">
                                             <p>Lorem Ipsum.</p>
@@ -234,17 +235,17 @@
                     </div>
                     <div class="panel-body">
                         <ul>
-                            <li><a class="thumbnail" href="profile.png"><img src="../img/user.png"></a></li>
-                            <li><a class="thumbnail" href="profile.png"><img src="../img/user.png"></a></li>
-                            <li><a class="thumbnail" href="profile.png"><img src="../img/user.png"></a></li>
-                            <li><a class="thumbnail" href="profile.png"><img src="../img/user.png"></a></li>
-                            <li><a class="thumbnail" href="profile.png"><img src="../img/user.png"></a></li>
-                            <li><a class="thumbnail" href="profile.png"><img src="../img/user.png"></a></li>
-                            <li><a class="thumbnail" href="profile.png"><img src="../img/user.png"></a></li>
-                            <li><a class="thumbnail" href="profile.png"><img src="../img/user.png"></a></li>
-                            <li><a class="thumbnail" href="profile.png"><img src="../img/user.png"></a></li>
-                            <li><a class="thumbnail" href="profile.png"><img src="../img/user.png"></a></li>
-                            <li><a class="thumbnail" href="profile.png"><img src="../img/user.png"></a></li>
+                            <li><a class="thumbnail" href="profile.png"><img src="../../media/img/user.png"></a></li>
+                            <li><a class="thumbnail" href="profile.png"><img src="../../media/img/user.png"></a></li>
+                            <li><a class="thumbnail" href="profile.png"><img src="../../media/img/user.png"></a></li>
+                            <li><a class="thumbnail" href="profile.png"><img src="../../media/img/user.png"></a></li>
+                            <li><a class="thumbnail" href="profile.png"><img src="../../media/img/user.png"></a></li>
+                            <li><a class="thumbnail" href="profile.png"><img src="../../media/img/user.png"></a></li>
+                            <li><a class="thumbnail" href="profile.png"><img src="../../media/img/user.png"></a></li>
+                            <li><a class="thumbnail" href="profile.png"><img src="../../media/img/user.png"></a></li>
+                            <li><a class="thumbnail" href="profile.png"><img src="../../media/img/user.png"></a></li>
+                            <li><a class="thumbnail" href="profile.png"><img src="../../media/img/user.png"></a></li>
+                            <li><a class="thumbnail" href="profile.png"><img src="../../media/img/user.png"></a></li>
                         </ul>
                         <div class="clearfix"></div>
                         <a href="" class="btn btn-primary">View All Friends</a>
@@ -257,19 +258,19 @@
                     </div>
                     <div class="panel-body">
                         <div class="group-item">
-                            <img src="../img/group.png" alt="">
+                            <img src="../../media/img/group.png" alt="">
                             <h4><a href="">Sample Group 1</a></h4>
                             <p>Lorem Ipsum is simply dummy.</p>
                         </div>
                         <div class="clearfix"></div>
                         <div class="group-item">
-                            <img src="../img/group.png" alt="">
+                            <img src="../../media/img/group.png" alt="">
                             <h4><a href="">Sample Group 1</a></h4>
                             <p>Lorem Ipsum is simply dummy.</p>
                         </div>
                         <div class="clearfix"></div>
                         <div class="group-item">
-                            <img src="../img/group.png" alt="">
+                            <img src="../../media/img/group.png" alt="">
                             <h4><a href="">Sample Group 1</a></h4>
                             <p>Lorem Ipsum is simply dummy.</p>
                         </div>

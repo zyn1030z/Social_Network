@@ -21,6 +21,7 @@ from django.urls import path, include
 urlpatterns = [
                   path('admin/', admin.site.urls),
                   path('', include('users.urls')),
+                  path('home/', include('core.urls')),
               ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 
 # if setting is DEBUG, then use the media folder to keep the static files (images, JavaScript, or CSS)

@@ -2,6 +2,7 @@ from django import forms
 from users.models import SiteUser
 from django.contrib.auth.forms import UserCreationForm
 from django.core.exceptions import ValidationError
+from django.contrib.auth.models import User
 
 
 class UserRegisterForm(UserCreationForm):
@@ -41,3 +42,12 @@ class UserUpdateForm(forms.ModelForm):
     class Meta:
         model = SiteUser
         fields = ['first_name', 'last_name', 'address', 'phone_number', 'bio']
+
+
+class loginForm(forms.ModelForm):
+    email = forms.EmailField(required=True, widget=forms.EmailInput())
+    password = forms.CharField(widget=forms.PasswordInput())
+
+    class Meta:
+        model = User
+        fields = ['email', 'password']
